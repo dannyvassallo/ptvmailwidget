@@ -84,7 +84,6 @@ function resizeForm(){
   formH = $('#form-zone').height(),
   newH = formH + ($(window).height() - (hh + formH) - 170);
   $('#form-zone').height(newH);
-  alert($(window).height());
 }
 
 $(window).resize(function(){
