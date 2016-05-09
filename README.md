@@ -1,8 +1,8 @@
 #PTV Email Embed
 
 #How To Embed
-<style>
 ```html
+<style>
 body, html{
   position: relative;
   height: 100%;
