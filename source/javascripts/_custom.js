@@ -61,6 +61,7 @@ $(function(){
 
   $(".album-mini").load(function() {
     var winW = $(window).width();
+    resizeForm();
     if(winW >= 640){
       $('.cta').height($(this).height());
     }
@@ -78,8 +79,16 @@ $(function(){
 
 });
 
+function resizeForm(){
+  var hh = $('#header').height(),
+  formH = $('#form-zone').height(),
+  newH = formH + ($(window).height() - (hh + formH) - 170);
+  $('#form-zone').height(newH);
+}
+
 $(window).resize(function(){
   var winW = $(window).width();
+  resizeForm();
   if(winW >= 640){
     $('.cta').height($('.album-mini').height());
   }

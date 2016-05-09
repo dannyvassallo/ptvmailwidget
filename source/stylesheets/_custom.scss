@@ -38,8 +38,16 @@ body{
   position: absolute;
   height: 230px;
   background-position: left;
-  margin-top: -455px;
+  margin-top: -450px;
   z-index: 1;
+}
+
+.limiter{
+  max-width: 1700px;
+}
+
+.valign{
+  width: 100%;
 }
 
 .r3466056248{
@@ -55,9 +63,6 @@ body{
   background-image: url('https://s3.amazonaws.com/myfangate.com/ptv2016/repeatingredpaper.jpg');
   background-repeat: repeat;
   z-index: 0;
-  height: 100%;
-  position: absolute;
-  width: 100%;
   #entry{
     z-index: 999;
     position: relative;
