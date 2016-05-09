@@ -59,6 +59,13 @@ $(function(){
     $('.select-dropdown').trigger('click');
   });
 
+  $(".album-mini").load(function() {
+    var winW = $(window).width();
+    if(winW >= 640){
+      $('.cta').height($(this).height());
+    }
+  }).attr('src', 'https://s3.amazonaws.com/myfangate.com/ptv2016/albumcover.jpg');
+
   var onMouseDown = function(e) {
     // preventing the default still allows the scroll, but blocks the blur.
     // We're inside the scrollbar if the clientX is >= the clientWidth.
@@ -69,4 +76,11 @@ $(function(){
   //$newSelect.on('mousedown', onMouseDown);
   $('select').siblings('input.select-dropdown').on('mousedown', onMouseDown);
 
+});
+
+$(window).resize(function(){
+  var winW = $(window).width();
+  if(winW >= 640){
+    $('.cta').height($('.album-mini').height());
+  }
 });
