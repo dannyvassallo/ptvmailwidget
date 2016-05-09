@@ -1,6 +1,6 @@
 #PTV Email Embed
 
-#How To Embed
+####How To Embed
 ```html
 <style>
 body, html{
@@ -20,4 +20,4 @@ iframe{
 </style>
 <iframe id="ptvdowload" src="//ptvdownload.herokuapp.com/"></iframe>
 ```
-Example [https://jsfiddle.net/danielvassallo87/rzjmLhnz/2/](here)
+Example [here](https://jsfiddle.net/danielvassallo87/rzjmLhnz/2/)
